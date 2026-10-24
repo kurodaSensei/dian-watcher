@@ -4,7 +4,7 @@ import { classify } from './classify.js';
 import { loadConfig } from './config.js';
 import { notifyConsole } from './notify/console.js';
 import { notifyNtfy } from './notify/ntfy.js';
-import { decide } from './policy.js';
+import { decide, type Notification } from './policy.js';
 import { probe } from './probe/browser.js';
 import type { ProbeOutput } from './probe/types.js';
 import { loadState, saveState } from './state.js';
@@ -23,10 +23,18 @@ try {
 const status = classify(out);
 const { notification, state } = decide(status, prev, new Date(), cfg.runUrl);
 
+const send = (n: Notification) => (cfg.dryRun ? notifyConsole(n) : notifyNtfy(cfg, n));
+const toSend: Notification[] = [];
+if (cfg.notifyTest) {
+  // Disparo manual para comprobar que el tópico y la app del celular están bien conectados.
+  toSend.push({ title: 'Prueba del DIAN watcher', message: `Resultado de esta corrida: ${status.kind}`, priority: 3, tags: ['test_tube'] });
+}
+if (notification) toSend.push(notification);
+
 let notifyError: string | undefined;
-if (notification) {
+for (const n of toSend) {
   try {
-    await (cfg.dryRun ? notifyConsole(notification) : notifyNtfy(cfg, notification));
+    await send(n);
   } catch (e) {
     notifyError = String(e);
   }
@@ -36,6 +44,6 @@ await saveState(cfg.statePath, state);
 await mkdir(cfg.outDir, { recursive: true });
 const result = { at: new Date().toISOString(), status, notification, notifyError, state };
 await writeFile(join(cfg.outDir, 'result.json'), JSON.stringify(result, null, 2));
-console.log(JSON.stringify({ status, notified: !!notification, notifyError }, null, 2));
+console.log(JSON.stringify({ status, sent: toSend.map((n) => n.title), notifyError }, null, 2));
 
 process.exit(status.kind === 'ERROR' || status.kind === 'BLOCKED' || notifyError ? 1 : 0);
