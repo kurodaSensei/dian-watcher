@@ -126,7 +126,7 @@ Cada corrida escribe en `out/`:
 
 ## Stack
 
-- Node 20 + TypeScript (ESM), ejecutado con `tsx`
+- Node 24 LTS + TypeScript (ESM), ejecutado con `tsx`
 - Playwright (solo Chromium)
 - zod para la configuración
 - vitest para los tests de `classify` y `policy` con fixtures HTML/JSON

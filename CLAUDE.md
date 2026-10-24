@@ -15,7 +15,7 @@ por fases en @docs/PLAN.md. Lee ambos antes de cambiar la estructura.
 
 ## Reglas
 
-- TypeScript estricto, ESM, Node 20. Sin `any` salvo en el parseo de respuestas externas.
+- TypeScript estricto, ESM, Node 24 (LTS; Node 20 llegó a EOL en abril 2026). Sin `any` salvo en el parseo de respuestas externas.
 - `classify.ts` y `policy.ts` son **funciones puras**: nada de I/O, fechas
   solo inyectadas (`now: Date` como parámetro).
 - Todo cambio en `classify` o `policy` lleva test con fixture en `test/fixtures/`.

@@ -1,0 +1,14 @@
+[
+  {
+    "method": "POST",
+    "url": "https://agendamiento.dian.gov.co/Player.aspx/ValidadorValidar",
+    "status": 200,
+    "body": "{\"d\":\"{\\\"Fuente\\\":null,\\\"MensajeAdicional\\\":null,\\\"ErrorString\\\":null,\\\"Observacion\\\":\\\"\\\",\\\"RespuestaInterna\\\":null,\\\"Recurso\\\":\\\"\\\",\\\"Encontrado\\\":true,\\\"ObjetosEncontrados\\\":[[{\\\"IdCategoria\\\":\\\"63071985-f5bd-43fe-beed-38f64c97371b\\\",\\\"Nombre\\\":\\\"Devoluciones.\\\",\\\"Codigo\\\":\\\"13\\\"}]],\\\"TotalObjetosEncontrados\\\":1,\\\"DetalleAdicional\\\":\\\"manejadorEncontroCategoria\\\"}\"}"
+  },
+  {
+    "method": "POST",
+    "url": "https://agendamiento.dian.gov.co/Player.aspx/ValidadorValidar",
+    "status": 200,
+    "body": "{\"d\":\"{\\\"Fuente\\\":null,\\\"MensajeAdicional\\\":null,\\\"ErrorString\\\":\\\"Error interno del servidor\\\",\\\"Observacion\\\":\\\"\\\",\\\"RespuestaInterna\\\":null,\\\"Recurso\\\":\\\"\\\",\\\"Encontrado\\\":false,\\\"ObjetosEncontrados\\\":null,\\\"TotalObjetosEncontrados\\\":0,\\\"DetalleAdicional\\\":\\\"manejadorNoEncontroColas\\\"}\"}"
+  }
+]

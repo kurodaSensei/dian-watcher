@@ -73,7 +73,7 @@ o Claude in Chrome.
 
 **Prompt:**
 > Crea .github/workflows/watch.yml: cron `7 */4 * * *` más
-> workflow_dispatch; Node 20 con cache de npm; cache del navegador de
+> workflow_dispatch; Node 24 con cache de npm; cache del navegador de
 > Playwright; restore/save de .state/ con actions/cache (key con run_id,
 > restore-keys por prefijo, save con `if: always()`); `npm run check` con
 > el secret NTFY_TOPIC; upload-artifact de out/ con 7 días de retención.
