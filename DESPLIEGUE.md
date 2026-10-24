@@ -58,6 +58,38 @@ ntfy es la app gratuita que recibe los avisos.
 **En iPhone:** cuando la app pida permiso para enviar notificaciones, dile
 que **sí**.
 
+### Prueba rápida de que el celular recibe avisos
+
+Antes de seguir, confirma que el celular sí recibe:
+
+1. En el computador abre `https://ntfy.sh/` seguido de tu nombre de canal.
+   Ejemplo: `https://ntfy.sh/dian-devoluciones-7hq2m9xk4p`
+2. Abajo hay un cuadro para escribir. Escribe "hola" y envíalo (flecha o
+   Enter).
+3. En unos segundos te debe llegar "hola" al celular.
+
+**Si no llega:**
+
+- **El nombre no es idéntico.** Abre el canal en la app y compara letra
+  por letra con el del navegador. Un guion o una letra distinta es otro
+  canal. Si tienes dudas, borra la suscripción y créala de nuevo copiando
+  y pegando el nombre.
+- **El servidor no es el correcto.** Al suscribirte debe decir `ntfy.sh`. No
+  marques "usar otro servidor" (*Use another server*).
+- **Las notificaciones están apagadas.**
+  - iPhone: *Ajustes → Notificaciones → ntfy → Permitir notificaciones*
+    activado. Revisa también que no tengas un modo Concentración (Focus)
+    o No molestar que las silencie.
+  - Android: *Ajustes → Aplicaciones → ntfy → Notificaciones* activadas.
+    En *Batería*, ponla como **Sin restricciones**, para que el sistema no
+    la cierre.
+- **Abre la app y entra al canal.** Si ves el mensaje adentro pero no te
+  llegó la alerta, el problema es solo de permisos de notificación (punto
+  anterior).
+- **Los mensajes viejos no se avisan.** Si te suscribiste *después* de que
+  se envió un aviso, puede que aparezca dentro de la app pero sin alerta.
+  Envía uno nuevo desde el navegador para probar.
+
 ---
 
 ## Paso 2. Descomprime el archivo
