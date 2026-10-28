@@ -1,6 +1,6 @@
 # DIAN watcher
 
-Watcher que revisa cada 4 h si hay citas de "Devoluciones" (video
+Watcher que revisa cada hora si hay citas de "Devoluciones" (video
 atención, persona natural) en https://agendamiento.dian.gov.co/ y avisa
 por ntfy. La arquitectura completa está en @docs/ARCHITECTURE.md y el plan
 por fases en @docs/PLAN.md. Lee ambos antes de cambiar la estructura.

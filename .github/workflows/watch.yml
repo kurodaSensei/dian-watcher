@@ -2,7 +2,7 @@ name: watch
 
 on:
   schedule:
-    - cron: '7 */4 * * *' # cada 4 h, en UTC (19:07, 23:07, 03:07, 07:07, 11:07, 15:07 en Colombia)
+    - cron: '7 * * * *' # cada hora, al minuto 7
   workflow_dispatch:
     inputs:
       prueba:

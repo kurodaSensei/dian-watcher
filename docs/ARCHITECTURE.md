@@ -2,14 +2,14 @@
 
 ## Objetivo
 
-Cada 4 horas, comprobar si el flujo de https://agendamiento.dian.gov.co/
+Cada hora, comprobar si el flujo de https://agendamiento.dian.gov.co/
 (Agendar cita → Persona natural → Video atención → Devoluciones) muestra
 especialidades disponibles, y avisar por push cuando sí las hay.
 
 ## Vista general
 
 ```
-           ┌───────────────── GitHub Actions (cron 7 */4 * * *) ─────────────────┐
+           ┌───────────────── GitHub Actions (cron 7 * * * *) ───────────────────┐
            │                                                                      │
            │   restore state.json (actions/cache)                                 │
            │            │                                                         │

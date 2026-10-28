@@ -1,6 +1,6 @@
 # DIAN watcher
 
-Revisa cada 4 horas si hay citas de **Devoluciones** (videoatención, persona
+Revisa cada hora si hay citas de **Devoluciones** (videoatención, persona
 natural) en https://agendamiento.dian.gov.co/ y avisa al celular con
 [ntfy](https://ntfy.sh).
 

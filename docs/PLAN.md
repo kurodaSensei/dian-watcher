@@ -72,7 +72,7 @@ o Claude in Chrome.
 ## Fase 3: GitHub Actions
 
 **Prompt:**
-> Crea .github/workflows/watch.yml: cron `7 */4 * * *` más
+> Crea .github/workflows/watch.yml: cron `7 * * * *` (cada hora) más
 > workflow_dispatch; Node 24 con cache de npm; cache del navegador de
 > Playwright; restore/save de .state/ con actions/cache (key con run_id,
 > restore-keys por prefijo, save con `if: always()`); `npm run check` con

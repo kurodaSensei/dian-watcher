@@ -10,21 +10,21 @@ No necesitas saber programar. Son unos 20 minutos y solo se hace una vez.
 
 ## Qué hace, en pocas palabras
 
-- Cada 4 horas, GitHub abre la página de la DIAN por su cuenta y hace los
+- Cada hora, GitHub abre la página de la DIAN por su cuenta y hace los
   mismos clics que harías tú: *Agendar cita → Persona Natural →
   Videoatención → Devoluciones*.
 - Si sale el mensaje "No se encontraron especialidades…", **no hace nada**.
   Que no lleguen avisos es buena señal.
-- Si **hay citas**, manda una alerta fuerte al celular. La repite cada 4
-  horas mientras sigan disponibles.
+- Si **hay citas**, manda una alerta fuerte al celular. La repite cada
+  hora mientras sigan disponibles.
 - Si algo se daña dos veces seguidas, manda un aviso suave para que alguien
   lo revise.
 - Los lunes manda un "sigo vivo" para que sepas que sigue funcionando.
 
-Horarios en Colombia: **3:07 a. m., 7:07 a. m., 11:07 a. m., 3:07 p. m.,
-7:07 p. m. y 11:07 p. m.** GitHub a veces se atrasa unos minutos; es normal.
+Revisa **cada hora, a los 7 minutos** (1:07, 2:07, 3:07…), de día y de
+noche. GitHub a veces se atrasa unos minutos; es normal.
 
-**¿Cuesta algo?** No. Usa los minutos gratis de GitHub: unos 300–450
+**¿Cuesta algo?** No. Usa los minutos gratis de GitHub: unos 750–1.000
 minutos al mes, de los 2.000 gratis que da a los repositorios privados.
 
 ---
@@ -163,7 +163,7 @@ la vista.
 El aviso de prueba también dice el resultado. Hoy debería decir
 **`NO_SLOTS`**, que quiere decir "no hay citas todavía".
 
-A partir de aquí funciona solo, cada 4 horas, **aunque tengas el
+A partir de aquí funciona solo, cada hora, **aunque tengas el
 computador apagado**.
 
 ---
@@ -213,6 +213,6 @@ evidencia.
   persona.
 - **¿Hay riesgo para mi cuenta?** No. El repositorio es privado, el
   vigilante solo *mira* la página (no llena formularios) y revisa cada
-  4 horas, que es muy poco.
+  hora, que es poco.
 - **¿Llegan correos de GitHub cuando falla?** Puede que GitHub te mande un
   correo cuando una corrida sale en rojo. Es normal.
